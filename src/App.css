@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500");
+
+
 * {
   margin: 0;
   padding: 0;
@@ -30,45 +32,52 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
-.footer {
-  width: 450px;
-  text-align: center;
-  display: block;
-  margin: 15px auto 30px auto;
-  font-size: 0.8em;
-  color: #fff;
+
+.container {
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction:column ;
+   width: 100%;
+   height: 100%;
+
+   
 }
-.footer a {
-  font-weight: 500;
-  text-decoration: none;
-  color: #fff;
-}
+
 
 #quote-box {
   border-radius: 3px;
   position: relative;
   width: 450px;
+  
   padding: 40px 50px;
   background-color: #fff;
   box-shadow: 3px 3px 9px 1px rgba(0,0,0,0.75);
 -webkit-box-shadow: 3px 3px 9px 1px rgba(0,0,0,0.75);
 -moz-box-shadow: 3px 3px 9px 1px rgba(0,0,0,0.75);
 }
+
+
 #quote-box .quote-text {
   width: 100%;
   text-align: center;
-  width: 450px;
   height: auto;
   font-weight: 500;
   font-size: 1.75em;
 }
+
+
 #quote-box .quote-text i {
   font-size: 1em;
   margin-right: 0.5em;
 }
+
+
 #quote-box .quote-author {
   width: 100%;
   height: auto;
@@ -76,6 +85,8 @@ code {
   font-size: 1em;
   text-align: right;
 }
+
+
 #quote-box .buttons {
   width: 100%;
   margin: auto;
@@ -83,6 +94,8 @@ code {
   justify-content: space-between;
   align-items: center;
 }
+
+
 #quote-box .buttons .button {
   height: 38px;
   border: none;
@@ -96,9 +109,11 @@ code {
   opacity: 1;
   cursor: pointer;
 }
+
 #quote-box .buttons .button:hover {
   opacity: 0.9;
 }
+
 #quote-box .buttons .button#tweet-quote, #quote-box .buttons .button#tumblr-quote {
   padding: 10px 20px;
   /* padding-top: 8px; */
@@ -109,3 +124,31 @@ code {
   width: 40px;
 }
 
+.footer {
+
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+@media(max-width:600px) {
+
+  #quote-box {
+    border-radius: 3px;
+    width: 50%;
+  }
+  #quote-box .buttons {
+      flex-direction: column;
+      margin-top:1.5em;
+  }
+}

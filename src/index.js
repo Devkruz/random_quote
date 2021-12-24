@@ -90,6 +90,7 @@ function App() {
               <span id="text" style={{color:currentColor}}>{currentQuote ? currentQuote: "Loading..." }</span>
             </div>
             <div className="quote-author" style={{color:currentColor, opacity: 0}}>- <span id="author">{currentAuthor ? currentAuthor : "Loading..."}</span></div>
+          
             <div className="buttons">
 
               <div className="share-btn">
@@ -129,7 +130,7 @@ function App() {
             </div>
     </div>
   
-      <div className="footer">by <a href="https://codepen.io/Kruze-Development/">tonyKuz</a></div>
+      <div className="footer">by <a href="https://codepen.io/Kruze-Development/">DevKruz</a></div>
     </div>
   </div>
   );
