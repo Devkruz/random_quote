@@ -1,3 +1,3 @@
 A random quote generator project... Freecodecamp Project.
 
-Live: -- 
+Live: https://ranquote.netlify.app/
